@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: ${PORT:8000}
 spring:
   application:
     name: user-api
