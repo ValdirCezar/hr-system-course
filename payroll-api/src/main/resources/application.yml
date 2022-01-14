@@ -2,5 +2,8 @@ spring:
   application:
     name: payroll-api
 server:
-  port: 8100
-
+  port: ${PORT:8100}
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_URL:http://localhost:8761/eureka}
